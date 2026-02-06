@@ -11,7 +11,7 @@ function App() {
 
       {/* Content: logo, title, paragraph, button - left-aligned */}
       <main className="relative z-10 min-h-screen flex items-center">
-        <div className="w-full max-w-3xl px-8 md:px-12 lg:px-40 py-12">
+        <div className="w-full max-w-xl px-8 md:px-12 lg:px-40 py-12 lg:max-w-4xl">
           {/* Logo: exported from Figma as SVG, used as-is */}
           <div className="flex items-center gap-3 mb-8 md:mb-10">
             <img
@@ -21,7 +21,7 @@ function App() {
             />
           </div>
 
-          <h1 className="text-4xl font-semibold text-cyan-950 leading-tight mb-6">
+          <h1 className="text-4xl font-medium font-sans-tight text-cyan-950 leading-tight mb-6 lg:text-5xl">
             Money Management for Modern Finance Teams
           </h1>
 
