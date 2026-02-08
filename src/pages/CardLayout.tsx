@@ -33,7 +33,7 @@ export default function CardLayout() {
   return (
     <div className="min-h-screen w-full overflow-hidden relative bg-white">
       {/* Content: centered card layout */}
-      <main className="flex-col items-center justify-center py-10 px-2 lg:p-10 min-h-screen">
+      <main className="flex flex-col items-center justify-between py-10 px-2 lg:p-10 min-h-screen">
         <div className="flex items-center justify-center">
           <img 
             src="/logo.svg" 
@@ -41,13 +41,18 @@ export default function CardLayout() {
             className="h-5 w-auto"
           />
         </div>
-        <div className="flex flex-col items-center justify-center h-screen pb-40 px-2">
+        <div className="flex flex-col items-center justify-center px-2 mt-10">
           <CardHome
             onEnterPressed={() => {
               // Replace with your actual login URL
               window.location.href = 'https://identity.nofrixion.com/Account/Login'
             }}
           />
+        </div>
+        <div className="flex items-center justify-center">
+          <p className="text-center text-[10px] text-slate-400 max-w-3xl px-2">NoFrixion Ltd is authorised as an Electronic Money Institution (EMI) by the Central Bank of Ireland under firm reference number CBI00458163. Although the Central Bank of Ireland’s Deposit Guarantee Scheme does not apply to Electronic Money Institutions, NoFrixion ensures the full protection of customer funds, in line with regulatory requirements. NoFrixion is compliant with the Payment Card Industry - Data Security Standard (PCI-DSS), maintaining the highest standards for payment security.
+
+</p>
         </div>
       </main>
     </div>
