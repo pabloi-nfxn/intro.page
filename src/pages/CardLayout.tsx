@@ -1,8 +1,8 @@
 // Version 2: Centered card layout (MoneyMoov for Business style)
 const CardHome = ({ onEnterPressed }: { onEnterPressed: () => void }) => {
   return (
-    <div className="relative flex flex-col items-center justify-center rounded-4xl pt-32 pb-12 w-fit bg-slate-50 text-cyan-950">
-      <div className="absolute top-[0.3rem] w-full -translate-y-1/2 lg:top-2 lg:w-auto">
+    <div className="relative flex flex-col items-center justify-center rounded-4xl pt-32 pb-12 px-16 w-fit bg-slate-50 text-cyan-950">
+      <div className="absolute top-[0.3rem] -translate-y-1/2 lg:top-2 w-auto">
         <img
           src="/business-diagram.svg"
           alt="MoneyMoov for Business Graphic"
@@ -14,7 +14,7 @@ const CardHome = ({ onEnterPressed }: { onEnterPressed: () => void }) => {
       Money Management for <br />Modern Finance Teams
       </h2>
 
-      <p className="mt-6 px-6 text-center text-sm leading-6 w-xl lg:mt-8 lg:text-base ">
+      <p className="mt-6 text-center text-sm leading-6 w-sm lg:mt-8 lg:text-base ">
         Send, receive, store and reconcile automatically.<br />The intelligent Current Account
         that seamlessly blends into your business operations.
       </p>
