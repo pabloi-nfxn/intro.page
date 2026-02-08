@@ -4,7 +4,7 @@ const CardHome = ({ onEnterPressed }: { onEnterPressed: () => void }) => {
     <div className="relative flex flex-col items-center justify-center rounded-4xl pt-32 pb-12 w-fit bg-slate-50 text-cyan-950">
       <div className="absolute top-[0.3rem] w-full -translate-y-1/2 lg:top-2 lg:w-auto">
         <img
-          src={"../assets/graphics/for-business-diagram-desktop.svg"}
+          src="/business-diagram.svg"
           alt="MoneyMoov for Business Graphic"
           className="mx-auto h-full w-full object-cover"
         />
