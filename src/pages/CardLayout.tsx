@@ -58,6 +58,7 @@ export default function CardLayout() {
               window.location.href = 'https://identity.nofrixion.com/Account/Login'
             }}
           />
+          <p className="py-4 text-xs text-slate-400">Version 0.1.96</p>
         </div>
         <div className="flex items-center justify-center">
           <p className="text-center text-[10px] text-slate-400 max-w-3xl px-2">NoFrixion Ltd is authorised as an Electronic Money Institution (EMI) by the Central Bank of Ireland under firm reference number CBI00458163. Although the Central Bank of Ireland's Deposit Guarantee Scheme does not apply to Electronic Money Institutions, NoFrixion ensures the full protection of customer funds, in line with regulatory requirements. NoFrixion is compliant with the Payment Card Industry - Data Security Standard (PCI-DSS), maintaining the highest standards for payment security.
