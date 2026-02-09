@@ -1,7 +1,7 @@
 // Version 2: Centered card layout (MoneyMoov for Business style)
 const CardHome = ({ onEnterPressed }: { onEnterPressed: () => void }) => {
   return (
-    <div className="flex flex-col items-center justify-center rounded-4xl w-full pt-10 pb-8 px-4 bg-none md:pb-12 md:pt-14 md:px-16 md:bg-[linear-gradient(135deg,#E8FCF2_0%,#D7FBE9_50%,#8BE4E2_100%)] text-cyan-950">
+    <div className="flex flex-col items-center justify-center rounded-4xl w-full pt-10 pb-8 px-4 bg-none md:pb-10 md:pt-14 md:px-16 md:bg-[linear-gradient(135deg,#E8FCF2_0%,#D7FBE9_50%,#8BE4E2_100%)] text-cyan-950">
 
       <div className="w-28 mb-8 md:mb-10">
         <img
@@ -21,12 +21,12 @@ const CardHome = ({ onEnterPressed }: { onEnterPressed: () => void }) => {
       </p>
 
       <button
-        className="flex items-center justify-center rounded-lg px-10 py-3 mt-8 bg-cyan-900 text-teal-200 hover:bg-cyan-950 transition-colors"
+        className="flex items-center justify-center rounded-full px-10 py-3 mt-8 bg-cyan-900 text-teal-200 hover:bg-cyan-950 transition-colors"
         onClick={onEnterPressed}
       >
         <span>Enter</span>
       </button>
-      <a className="mt-12 text-xs text-teal-900/70 underline hover:no-underline cursor-pointer" href="https://www.nofrixion.com/whats-new">What's new?</a>
+      <a className="mt-8 text-xs text-teal-900/70 underline hover:no-underline cursor-pointer" href="https://www.nofrixion.com/whats-new">What's new?</a>
 
     </div>
   )
