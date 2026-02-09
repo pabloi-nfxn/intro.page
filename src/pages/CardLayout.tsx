@@ -21,7 +21,7 @@ const CardHome = ({ onEnterPressed }: { onEnterPressed: () => void }) => {
       </p>
 
       <button
-        className="flex items-center justify-center rounded-lg px-20 py-3 mt-8 bg-cyan-900 text-teal-200 hover:bg-cyan-950 transition-colors"
+        className="flex items-center justify-center rounded-lg px-10 py-3 mt-8 bg-cyan-900 text-teal-200 hover:bg-cyan-950 transition-colors"
         onClick={onEnterPressed}
       >
         <span>Enter</span>
