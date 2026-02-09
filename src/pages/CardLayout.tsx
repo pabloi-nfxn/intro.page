@@ -1,7 +1,7 @@
 // Version 2: Centered card layout (MoneyMoov for Business style)
 const CardHome = ({ onEnterPressed }: { onEnterPressed: () => void }) => {
   return (
-    <div className="relative flex flex-col items-center justify-center rounded-4xl pt-4 pb-8 px-4 md:pt-28 md:px-16 bg-slate-50 text-cyan-950">
+    <div className="relative flex flex-col items-center justify-center rounded-4xl w-full pt-4 pb-8 px-4 md:pt-28 md:px-16 bg-slate-50 text-cyan-950">
       {/* Mobile-centered business diagram */}
       <div className="mb-6 flex justify-center md:hidden">
         <img
@@ -51,14 +51,14 @@ export default function CardLayout() {
             className="h-5 w-auto"
           />
         </div>
-        <div className="flex flex-col items-center justify-center px-2 md:mt-10">
+        <div className="flex flex-col items-center justify-center w-full md:w-fit px-2 md:mt-20">
           <CardHome
             onEnterPressed={() => {
               // Replace with your actual login URL
               window.location.href = 'https://identity.nofrixion.com/Account/Login'
             }}
           />
-          <p className="py-4 text-xs text-slate-400">Version 0.1.96</p>
+          <a className="py-4 text-xs text-slate-400 underline hover:no-underline cursor-pointer" href="https://www.nofrixion.com/whats-new">Version 0.1.96</a>
         </div>
         <div className="flex items-center justify-center">
           <p className="text-center text-[10px] text-slate-400 max-w-3xl px-2">NoFrixion Ltd is authorised as an Electronic Money Institution (EMI) by the Central Bank of Ireland under firm reference number CBI00458163. Although the Central Bank of Ireland's Deposit Guarantee Scheme does not apply to Electronic Money Institutions, NoFrixion ensures the full protection of customer funds, in line with regulatory requirements. NoFrixion is compliant with the Payment Card Industry - Data Security Standard (PCI-DSS), maintaining the highest standards for payment security.
