@@ -1,20 +1,30 @@
 // Version 2: Centered card layout (MoneyMoov for Business style)
 const CardHome = ({ onEnterPressed }: { onEnterPressed: () => void }) => {
   return (
-    <div className="relative flex flex-col items-center justify-center rounded-4xl pt-32 pb-12 px-16 w-fit bg-slate-50 text-cyan-950">
-      <div className="absolute top-[0.3rem] -translate-y-1/2 lg:top-2 w-auto">
+    <div className="relative flex flex-col items-center justify-center rounded-4xl pt-4 pb-8 px-4 md:pt-28 md:px-16 bg-slate-50 text-cyan-950">
+      {/* Mobile-centered business diagram */}
+      <div className="mb-6 flex justify-center md:hidden">
         <img
           src="/business-diagram.svg"
-          alt="MoneyMoov for Business Graphic"
-          className="mx-auto h-full w-full object-cover"
+          alt="Business Diagram"
+          className="w-80 h-auto object-contain"
         />
       </div>
 
-      <h2 className="relative text-3xl font-semibold text-center">
+      {/* Existing absolute diagram for desktop/tablet */}
+      <div className="hidden md:block absolute top-2 -translate-y-1/2 w-auto">
+        <img
+          src="/business-diagram.svg"
+          alt="Business Diagram"
+          className="h-full w-full object-cover"
+        />
+      </div>
+
+      <h2 className="relative text-2xl md:text-3xl font-semibold text-center">
       Money Management for <br />Modern Finance Teams
       </h2>
 
-      <p className="mt-6 text-center text-sm leading-6 w-sm lg:mt-8 lg:text-base ">
+      <p className="mt-6 text-center text-xs md:text-sm w-xs md:w-sm lg:mt-8 lg:text-base ">
         Send, receive, store and reconcile automatically.<br />The intelligent Current Account
         that seamlessly blends into your business operations.
       </p>
@@ -41,7 +51,7 @@ export default function CardLayout() {
             className="h-5 w-auto"
           />
         </div>
-        <div className="flex flex-col items-center justify-center px-2 mt-10">
+        <div className="flex flex-col items-center justify-center px-2 md:mt-10">
           <CardHome
             onEnterPressed={() => {
               // Replace with your actual login URL
