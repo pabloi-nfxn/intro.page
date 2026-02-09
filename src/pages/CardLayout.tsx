@@ -21,12 +21,12 @@ const CardHome = ({ onEnterPressed }: { onEnterPressed: () => void }) => {
       </p>
 
       <button
-        className="flex items-center rounded-lg px-6 py-3 mt-8  bg-cyan-900 text-teal-200 hover:bg-cyan-950 transition-colors"
+        className="flex items-center justify-center rounded-lg px-20 py-3 mt-8 bg-cyan-900 text-teal-200 hover:bg-cyan-950 transition-colors"
         onClick={onEnterPressed}
       >
         <span>Enter</span>
       </button>
-      <a className="mt-12 text-xs text-teal-700 underline hover:no-underline cursor-pointer" href="https://www.nofrixion.com/whats-new">What's new?</a>
+      <a className="mt-12 text-xs text-teal-900/70 underline hover:no-underline cursor-pointer" href="https://www.nofrixion.com/whats-new">What's new?</a>
 
     </div>
   )
