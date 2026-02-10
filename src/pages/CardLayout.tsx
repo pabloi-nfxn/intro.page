@@ -15,8 +15,10 @@ const CardHome = ({ onEnterPressed }: { onEnterPressed: () => void }) => {
       Business Portal
       </h2>
 
-      <p className="mt-4 text-center text-sm w-xs md:w-sm lg:mt-6 text-pretty">
-        Send, receive, store and reconcile automatically. The intelligent Current Account
+      <p className="mt-4 text-center text-sm w-xs md:w-sm lg:mt-6 wrap-anywhere">
+        Send, receive, store and <span className="whitespace-nowrap">
+  reconcile automatically.
+</span> <br />The intelligent Current Account
         that seamlessly blends into your business operations.
       </p>
 
